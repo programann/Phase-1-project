@@ -1,9 +1,15 @@
 body{
-    color: white;
+    margin-left: 20px;
+    color: gray;
     background-color: black;
 }
 
+.heading{
+    margin-left: 40px;
+}
+
 #disclaimer{
+    margin-left: 40px;
     border: 1px solid black;
     width: 50%;
 }
