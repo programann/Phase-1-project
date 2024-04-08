@@ -1,4 +1,3 @@
-# Phase-1-project
 # GOLD Exchange Rates
 A simple Web app which shows the exchange rates of gold.
 
