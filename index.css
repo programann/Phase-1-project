@@ -2,3 +2,10 @@ body{
     color: white;
     background-color: black;
 }
+
+#disclaimer{
+    border: 1px solid black;
+    width: 50%;
+}
+  
+    
