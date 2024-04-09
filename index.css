@@ -6,11 +6,13 @@ body{
 
 .heading{
     margin-left: 40px;
+    border-right: solid;
+    width: 50%;
 }
 
 #disclaimer{
     margin-left: 40px;
-    border: solid black;
+    border-right: solid ;
     width: 50%;
 }
   
