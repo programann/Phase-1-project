@@ -18,7 +18,7 @@ body{
     padding: 20px;
 }
 
-#data-get{
+#date-get{
     font-size: 1.2rem;
     background: transparent;
     color: gray;
@@ -26,6 +26,23 @@ body{
     
 
 }
+#apicontent{
+    margin-left: 20%;
+    background-color: gray;
+    border-radius: 15px;
+    color: black;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 55%;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    
+}
+h5{
+    border-top: 3px dashed white;
+    padding-top: 15px;
+}
+
 
 #disclaimer{
     margin-left: 40px;
