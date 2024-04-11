@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayData(data) {
         let div = document.querySelector('#apicontent');
-        div.innerHTML = ''; // Clear previous data
+        div.textContent = ''; // Clear previous data
 
         data.forEach(item => {
             let container = document.createElement('div');
@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
             dateParagraph.innerText = item.data;
             container.appendChild(dateParagraph);
 
-            let cenaParagraph = document.createElement('p');
-            cenaParagraph.style.display = 'none'; // Initially hide cena
-            cenaParagraph.innerText =`value of gold in dollars: ${item.cena}`;
-            container.appendChild(cenaParagraph);
+            let valueParagraph = document.createElement('p');
+            valueParagraph.style.display = 'none'; // Initially hide cena
+            valueParagraph.innerText =`value of gold in dollars: ${item.cena}`;
+            container.appendChild(valueParagraph);
 
-            container.addEventListener('mouseover', () => {
-                cenaParagraph.style.display = 'block'; // Show cena on mouseover
+            container.addEventListener('click', () => {
+                valueParagraph.style.display = 'block'; // Show cena on mouseover
             });
 
             container.addEventListener('mouseout', () => {
-                cenaParagraph.style.display = 'none'; // Hide cena on mouseout
+                valueParagraph.style.display = 'none'; // Hide cena on mouseout
             });
 
             div.appendChild(container);
