@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
     let dateButton = document.querySelector('#date-get');
     let url = 'http://api.nbp.pl/api/cenyzlota/last/30/?format=json';
 
@@ -38,4 +38,4 @@ document.addEventListener("DOMContentLoaded", () => {
             div.appendChild(container);
         });
     }
-});
+// });
