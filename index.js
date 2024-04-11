@@ -15,9 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
         div.innerHTML = ''; // Clear previous data
 
         data.forEach(item => {
-            let p = document.createElement('p');
-            p.innerText = item.data;
-            div.appendChild(p);
+            let container = document.createElement('div');
+            container.classList.add('data-container');
+
+            let dateParagraph = document.createElement('p');
+            dateParagraph.innerText = item.data;
+            container.appendChild(dateParagraph);
+
+            let cenaParagraph = document.createElement('p');
+            cenaParagraph.style.display = 'none'; // Initially hide cena
+            cenaParagraph.innerText =`value of gold in dollars: ${item.cena}`;
+            container.appendChild(cenaParagraph);
+
+            container.addEventListener('mouseover', () => {
+                cenaParagraph.style.display = 'block'; // Show cena on mouseover
+            });
+
+            container.addEventListener('mouseout', () => {
+                cenaParagraph.style.display = 'none'; // Hide cena on mouseout
+            });
+
+            div.appendChild(container);
         });
     }
 });
