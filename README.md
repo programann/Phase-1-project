@@ -9,6 +9,8 @@ By **Clarence Kinuthia**
 
 This is a simple web app which the user selects a day and the site will display the the prevailing exchange rates of that day.
 
+The value of gold shown is of the last 30 days.
+
 ## How To use
 
 ### Requirements
