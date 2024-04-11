@@ -21,10 +21,16 @@ body{
 #date-get{
     font-size: 1.2rem;
     background: transparent;
-    color: gray;
+    color: rgb(182, 182, 182);
     border-radius: 5px;
     
 
+}
+#back-button{
+    font-size: 1.2rem;
+    background: transparent;
+    color: rgb(182, 182, 182);
+    border-radius: 5px;
 }
 #apicontent{
     margin-left: 20%;
