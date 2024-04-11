@@ -23,10 +23,12 @@ body{
     background: transparent;
     color: rgb(182, 182, 182);
     border-radius: 5px;
+    width: 300px;
     
 
 }
 #back-button{
+    width: 300px;
     font-size: 1.2rem;
     background: transparent;
     color: rgb(182, 182, 182);
