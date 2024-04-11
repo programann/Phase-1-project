@@ -1,7 +1,7 @@
 body{
     margin-left: 20px;
-    color: gray;
-    background-color: black;
+    color: rgb(185, 173, 102);
+    background-color: rgb(86, 85, 82);
 }
 
 #title{
@@ -28,7 +28,7 @@ body{
 }
 #apicontent{
     margin-left: 20%;
-    background-color: gray;
+    background-color: rgb(171, 165, 165);
     border-radius: 15px;
     color: black;
     padding-left: 10px;
