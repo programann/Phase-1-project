@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             container.appendChild(dateParagraph);
             // creating a paragraph where the value of gold will be displayed
             let valueParagraph = document.createElement('p');
-            valueParagraph.style.display = 'none'; // Initially hide cena
+            valueParagraph.style.display = 'none'; // Initially hide value
             valueParagraph.innerText =`value of gold in dollars: ${item.cena}`;
             container.appendChild(valueParagraph);
         
