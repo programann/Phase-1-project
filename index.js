@@ -39,6 +39,20 @@ document.addEventListener("DOMContentLoaded", () => {
             div.appendChild(container);
         });
     }
+    let  awarenessContent = document.getElementById("awareness-content");
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        // Extract the "data" properties of all objects in the API
+        let dates = data.map(item => item.data);
+        
+        // Display the dates in the awareness content
+        awarenessContent.textContent = dates.join(', '); // Join dates with comma separator
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+        awarenessContent.textContent = "Error fetching data. Please try again later.";
+    });
     let searchBox = document.getElementById("search-box");
     let searchButton = document.getElementById("search-button");
      let searchResults = document.getElementById("search-results");
