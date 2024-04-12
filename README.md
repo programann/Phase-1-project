@@ -14,6 +14,8 @@ The value of gold shown is of the last 30 days.
 The user is expected to click on the button "Click here to get dates" and the dates will be displayed in the page.
 After that the user can click on a date with which they want to get the value of gold and the value will be displayed. Once the cursor is taken off the date then the value disappears.
 
+There are other ways the user can access the value of gold in a particular date.This is by using a searchbox.
+
 ## How To use
 
 ### Requirements
