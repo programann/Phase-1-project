@@ -10,6 +10,16 @@ body{
     border-bottom: 5px solid ;
     padding: 10px;
 }
+
+#awareness-content{
+    font-style: italic;
+    font-size: large;
+    padding-bottom: 15px;
+    border: 1px;
+    width: auto;
+    height: auto;
+    overflow-wrap: break-word;
+}
 #value-comments{
     margin-bottom: 15px;
 }
@@ -27,7 +37,7 @@ body{
     color: rgb(182, 182, 182);
     border-radius: 5px;
     width: 300px;
-    margin-top: 25px;
+    margin-top: 15px;
     
 
 }

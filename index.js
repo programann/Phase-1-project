@@ -65,5 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         console.error('Error fetching data:', error);
                         searchResults.textContent = "Error fetching data. Please try again later.";
                     });
-            });
+                });
+    
 });
