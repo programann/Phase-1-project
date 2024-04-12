@@ -15,13 +15,16 @@
         <p>This site provides prevailing exchange rates of gold at the global market</p>
         <h6 style="font-size: large;">IMPORTANT: THIS SITE PROVIDES THE VALUE OF THE CONVENTIONAL UNIT OF GOLD AGAINST THE UNITED STATES DOLLAR</h6>
     </div>
+    <div class="searching">
+        <form id="value-comments">
+            <input type="text" placeholder="YYYY-MM-DD" id="search-box">
+            <input type="button" value="Search" id="search-button">
+        </form>
+        <div id="search-results"></div>
+    </div>
     <div id="apicontainer">
         <!-- Button For getting the dates -->
         <button id="date-get">Click here To Get Dates</button>
-        <form id="value-comments">
-            <input type="text" placeholder="" onchange="//console.log(this.value)">
-            <input type="button" value="Get">
-        </form>
         <!-- This is where the dates will come in -->
         <div id="apicontent"></div>
     </div>
@@ -29,7 +32,7 @@
     <button id="back-button" onclick="document.location.reload()">BACK</button>
     <div>
         <h5>DISCLAIMER:</h5>
-        <p id="disclaimer">The market value of gold provided in this site is taken once, daily at a fixed time. Any decisions made for day trading from information on this site don't hold the publishers of this site accountable for any outcomes.It is also important know that the market can fluctuate immensely in between periods when the market value of gold is provided and the previous/next time it was/will be provided.</p>
+        <p id="disclaimer"> Any decisions made for day trading from information on this site don't hold the publishers of this site accountable for any outcomes.It is also important know that the market can fluctuate immensely in between periods when the market value of gold is provided and the previous/next time it was/will be provided.</p>
     </div>
 
     

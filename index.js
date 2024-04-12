@@ -39,4 +39,31 @@ document.addEventListener("DOMContentLoaded", () => {
             div.appendChild(container);
         });
     }
+    let searchBox = document.getElementById("search-box");
+    let searchButton = document.getElementById("search-button");
+     let searchResults = document.getElementById("search-results");
+
+            searchButton.addEventListener("click",() => {
+                let searchDate = searchBox.value;
+
+                // Fetch data from the API
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Search for the date in the fetched data
+                        let result = data.find(item => item.data === searchDate);
+
+                        if (result) {
+                            // If match found, append the value to search-results
+                            searchResults.textContent = `Gold price for ${searchDate}: ${result.cena}`;
+                        } else {
+                            // If no match found
+                            searchResults.textContent = "No data found for this date.Please make sure that the dates inserted match the ones listed above and match the required format.";
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                        searchResults.textContent = "Error fetching data. Please try again later.";
+                    });
+            });
 });

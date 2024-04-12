@@ -10,6 +10,9 @@ body{
     border-bottom: 5px solid ;
     padding: 10px;
 }
+#value-comments{
+    margin-bottom: 15px;
+}
 
 .heading{
     margin-left: 40px;
@@ -24,6 +27,7 @@ body{
     color: rgb(182, 182, 182);
     border-radius: 5px;
     width: 300px;
+    margin-top: 25px;
     
 
 }
@@ -35,7 +39,7 @@ body{
     border-radius: 5px;
 }
 #apicontent{
-    margin-left: 20%;
+    margin-left: 35%;
     background-color: rgb(171, 165, 165);
     border-radius: 15px;
     color: black;
@@ -45,6 +49,12 @@ body{
     margin-bottom: 20px;
     overflow-wrap: break-word;
     
+}
+#value-comments{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+
 }
 h5{
     border-top: 1px solid white;
