@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         if (result) {
                             // If match found, append the value to search-results
-                            searchResults.textContent = `Gold price for ${searchDate}: ${result.cena}`;
+                            searchResults.textContent = `Gold price for this date in dollars: ${result.cena}`;
                         } else {
                             // If no match found
                             searchResults.textContent = "No data found for this date.Please make sure that the dates inserted match the ones in the list above";
