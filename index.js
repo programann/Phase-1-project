@@ -42,13 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
     //The search box funtionality
     let searchBox = document.getElementById("search-box");
     let searchButton = document.getElementById("search-button");
-     let searchResults = document.getElementById("search-results");
-            //Add an Event listener
-            searchButton.addEventListener("click",() => {
-                let searchDate = searchBox.value;
+    let searchResults = document.getElementById("search-results");
+        //Add an Event listener
+        searchButton.addEventListener("click",(Event) => {
+            Event.preventDefault()
+            let searchDate = searchBox.value;
 
-                // Fetch data from the API
-                fetch(url)
+             // Fetch data from the API
+            fetch(url)
                     .then(response => response.json())
                     .then(data => {
                         // Search for the date in the fetched data
